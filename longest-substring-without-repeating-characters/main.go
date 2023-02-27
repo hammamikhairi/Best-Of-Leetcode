@@ -38,7 +38,7 @@ func lengthOfLongestSubstring(str string) int {
 		maxLen  int          = 0
 		past    uint64       = 0
 		temp    int          = 0
-		charMap map[byte]int = make(map[byte]int, 256)
+		charMap map[byte]int = make(map[byte]int)
 	)
 
 	for i := 0; i < len(str); i++ {
